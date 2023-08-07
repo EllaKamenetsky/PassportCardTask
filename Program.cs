@@ -1,6 +1,6 @@
-﻿IPolicyGenerator policyGenarator = new PolicyGenerator();
+﻿IPolicyGenerator policyGenerator = new PolicyGenerator();
 IFactoryManager factoryManager = new FactoryManager();
-var builder = new RatingEngineBuilder(policyGenarator, factoryManager);
+var builder = new RatingEngineBuilder(policyGenerator, factoryManager);
             
 var director = new RatingEngineDirector(builder);
 
