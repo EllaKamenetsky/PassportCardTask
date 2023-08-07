@@ -11,7 +11,7 @@
                 .Engine()
                 .Validation()?
                 .RatingCalculate();
-        var rating = _builder.GetReting();
+        var rating = _builder.GetRating();
         if (rating > 0)
         {
             Console.WriteLine($"Rating: {rating}");

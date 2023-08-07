@@ -19,7 +19,7 @@
             return this;
         }
 
-    public decimal GetReting()
+    public decimal GetRating()
     {
         return _rating;
     }
