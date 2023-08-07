@@ -2,7 +2,7 @@
     {
         private dynamic _policyOriginal;
         private Policy _policy;
-        private decimal _rating; 
+        private decimal _rating = 0; 
 
         private IPolicyGenerator _policyGenerated;
         private IFactoryManager _factoryManager;
@@ -19,23 +19,20 @@
             return this;
         }
 
-        public IRatingEngineBuilder LoadingPolicy()
-        {
-            _policyOriginal = _policyGenerated.PolicyCreate();
-            return this;
-        }
+    public decimal GetReting()
+    {
+        return _rating;
+    }
+
+    public IRatingEngineBuilder LoadingPolicy()
+    {
+        _policyOriginal = _policyGenerated.PolicyCreate();
+        return this;
+    }
 
         public IRatingEngineBuilder RatingCalculate()
         {
-            var rating =  _policy.RatingCalculate();
-            if (rating > 0)
-            {
-                Console.WriteLine($"Rating: {rating}");
-            }
-            else
-            {
-                Console.WriteLine("No rating produced.");
-            }
+            _rating =  _policy.RatingCalculate();           
             return this;
         }
 

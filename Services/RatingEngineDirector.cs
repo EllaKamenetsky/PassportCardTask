@@ -11,6 +11,16 @@
                 .Engine()
                 .Validation()?
                 .RatingCalculate();
+        var rating = _builder.GetReting();
+        if (rating > 0)
+        {
+            Console.WriteLine($"Rating: {rating}");
+        }
+        else
+        {
+            Console.WriteLine("No rating produced.");
+        }
+
     }
 }
 

@@ -5,5 +5,6 @@
     IRatingEngineBuilder Engine();
     IRatingEngineBuilder Validation();
     IRatingEngineBuilder RatingCalculate();
+    decimal GetReting();
 }
 
