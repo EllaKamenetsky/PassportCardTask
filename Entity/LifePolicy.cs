@@ -1,14 +1,5 @@
 ﻿using FluentValidation.Results;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestRatingNew.Entity.Validators;
 
-namespace TestRatingNew.Entity
-{
     public class LifePolicy : Policy
     {
         public decimal Amount { get; set; }
@@ -40,4 +31,3 @@ namespace TestRatingNew.Entity
             return validator.Validate(this); ;
         }
     }
-}

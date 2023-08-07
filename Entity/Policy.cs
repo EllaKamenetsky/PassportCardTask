@@ -1,15 +1,7 @@
 ﻿using FluentValidation;
 using FluentValidation.Results;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestRatingNew.Services;
 
-namespace TestRatingNew.Entity
-{
-    public abstract class Policy 
+public abstract class Policy 
     {
         protected PolicyType _type;
         protected bool _isValid = true;
@@ -32,4 +24,4 @@ namespace TestRatingNew.Entity
         }
         public abstract decimal RatingCalculate();
     }
-}
+

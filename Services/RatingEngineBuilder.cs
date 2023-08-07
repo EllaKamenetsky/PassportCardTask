@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TestRatingNew.Entity;
-using TestRatingNew.Services.Factories;
-
-namespace TestRatingNew.Services
-{
-    public class RatingEngineBuilder : IRatingEngineBuilder
+﻿    public class RatingEngineBuilder : IRatingEngineBuilder
     {
         private dynamic _policyOriginal;
         private Policy _policy;
@@ -61,4 +51,4 @@ namespace TestRatingNew.Services
             return _policy.ValidatePolicy() ? this : null;           
         }
     }
-}
+
