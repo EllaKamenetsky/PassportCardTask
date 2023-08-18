@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RatingEngineBuilder">
+    <Position X="3" Y="3" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIBAAFAAAgAAAAAAACAACAAAAAAAAAAABgAAAIAAAIA=</HashCode>
+      <FileName>Services\RatingEngineBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_factoryManager" />
+      <Field Name="_policyGenerated" />
+      <Field Name="_policy" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RatingEngineDirector">
+    <Position X="8.25" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>Services\RatingEngineDirector.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_builder" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Policy" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgCAAIQAAAAAAAAAAAAQAAQAAUAAAAAAAIA=</HashCode>
+      <FileName>Entity\Policy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IRatingEngineBuilder">
+    <Position X="3" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAgAAAAAAACAAAAAAAAAAAAAABgAAAIAAAAA=</HashCode>
+      <FileName>Services\IRatingEngineBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IRatingEngineDirector">
+    <Position X="8.25" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\IRatingEngineDirector.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IFactoryManager">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Factories\IFactoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IPolicyGenerator">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Services\IPolicyGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
